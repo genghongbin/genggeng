@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8" />
+		<title></title>
+		<script src="js/动画函数的封装.js"></script>
+		<script src="index.js" type="text/javascript" charset="utf-8"></script>
+		<style type="text/css">
+			* {
+				margin: 0px;
+				padding: 0px;
+				text-decoration: none;
+				list-style: none;
+			}
+
+			.box {
+				width: 600px;
+				height: 400px;
+				margin: 0 auto;
+				overflow: hidden;
+				position: relative;
+			}
+
+			.box>ul>li>img {
+				width: 600px;
+				height: 400px;
+			}
+
+			.box>ul>li {
+				float: left;
+			}
+
+			.box ul {
+				width: 1000%;
+				position: absolute;
+				top: 0;
+				left: 0;
+			}
+
+			.leftarrow {
+				transform: rotate(180deg);
+				display: inline-block;
+				position: absolute;
+				top: 200px;
+				display: none;
+				z-index: 2;
+
+			}
+
+			.ringhtarrow {
+				display: inline-block;
+				position: absolute;
+				top: 192px;
+				left: 585px;
+				display: none;
+				z-index: 2;
+			}
+
+			.circle {
+				position: absolute;
+				top: 360px;
+				left: 240px;
+
+			}
+
+			.circle a {
+				display: inline-block;
+				width: 15px;
+				height: 15px;
+				border-radius: 50%;
+				background: rgba(255, 255, 255, .4);
+				margin-right: 5px;
+				border: 1px solid rgba(0, 0, 0, .05);
+			}
+
+			.circle .cuurrent {
+				width: 9px;
+				height: 9px;
+				top: 2px;
+				left: 0;
+				border: 3px solid rgba(0, 0, 0, .1);
+			}
+		</style>
+	</head>
+	<body>
+		<div class="box">
+			<a href="javascript:;" class="leftarrow">
+				&#x27A4;
+			</a>
+			<a href="javascript:;" class="ringhtarrow">
+				&#x27A4;
+			</a>
+			<ul>
+				<li><img src="img/iu1.jpg"></li>
+				<li><img src="img/iu2.jpg"></li>
+				<li><img src="img/iu3.jpg"></li>
+				<li><img src="img/iu4.jpg"></li>
+				<li><img src="img/iu5.jpg"></li>
+			</ul>
+			<div class="circle">
+
+			</div>
+		</div>
+	</body>
+</html>
